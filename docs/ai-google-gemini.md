@@ -146,7 +146,9 @@ HTML
 <div class="content">
   <p>This is the main content of the page. It will be pushed down when a sub-menu is opened.</p>
 </div>
+
 CSS Styling
+
 The CSS sets up the menu's appearance and handles the initial state of the sub-menus, which are hidden using display: none. The .active class is a crucial part of the JavaScript, as it will be toggled to show or hide the sub-menus.
 ```
 
@@ -207,7 +209,9 @@ body {
   font-weight: normal;
   padding: 8px 15px;
 }
+
 JavaScript Logic
+
 The JavaScript listens for clicks on the main menu links. When a link is clicked, it first closes any currently open sub-menu. Then, it finds the correct sub-menu using the data-menu-id attribute and toggles the .active class to either show or hide it. This ensures that only one sub-menu is open at a time.
 ```
 
